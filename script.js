@@ -14,7 +14,7 @@ p.forEach(elem =>{
         a.textContent = "Read more";
         a.addEventListener('click', ()=>{
             isSliced = !isSliced;
-            span.textContent = (isSliced) ? sliced : text;
+            span.textContent = (isSliced) ? `${sliced}...` : text;
             isMore = !isMore;
             a.textContent = (isMore) ? "Read more" : "Read less";
         })
